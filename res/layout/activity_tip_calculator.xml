@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/btn20"
+        android:onClick="calculateTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn15"
+        android:layout_alignBottom="@+id/btn15"
+        android:layout_toRightOf="@+id/btn15"
+        android:text="20%" />
+
+    <EditText
+        android:id="@+id/etTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="@string/enter_amount"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn10"
+        android:onClick="calculateTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn15"
+        android:layout_alignBottom="@+id/btn15"
+        android:layout_toLeftOf="@+id/btn15"
+        android:text="10%" />
+
+    <Button
+        android:id="@+id/btn15"
+        android:onClick="calculateTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTotalAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="15%" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn10"
+        android:layout_below="@+id/btn10"
+        android:layout_marginTop="84dp"
+        android:text="@string/tip_is" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/btn15"
+        android:layout_marginLeft="33dp"
+        android:text="$0" />
+
+</RelativeLayout>
